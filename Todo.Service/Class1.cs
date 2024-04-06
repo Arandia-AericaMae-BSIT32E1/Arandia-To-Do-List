@@ -3,7 +3,7 @@ using Todolist.Models;
 
 namespace Todo.Service;
 
-public class TodoService(ITodoRepository repository, ICategoryRepository categoryRepository) : ITodoService
+public class TodoService(ITodoRepository repository) : ITodoService
 {
     public async Task<bool> Delete(int id)
     {
